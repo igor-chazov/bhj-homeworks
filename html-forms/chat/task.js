@@ -40,18 +40,18 @@ class Chat {
 
       if (messages.length === 0) return;
 
-      this.showMessegeClient();
+      this.showMessegeClient(messages);
       this.clearMessages();
       this.showMessegeBot();
     }
   }
 
-  showMessegeClient() {
+  showMessegeClient(text) {
     const now = new Date();
     this.inputMessages.innerHTML += `
     <div class="message">
       <div class="message__time">${now.getHours()}:${now.getMinutes()}</div>
-      <div class="message__text">${this.messages}</div>
+      <div class="message__text">${text}</div>
     </div>`;
     this.scrollDown();
   }

@@ -1,6 +1,11 @@
 body {
   font-family: Arial;
 }
+
+.hidden {
+  display: none;
+}
+
 .cart__products {
   display: flex;
   justify-content: center;
@@ -26,6 +31,21 @@ body {
   height: 100px;
   object-fit: contain;
 }
+
+.cart__remove {
+  width: 180px;
+  text-align: center;
+  background-color: rgb(250, 8, 8);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.cart__remove:hover {
+  background-color: rgba(250, 8, 8, 0.671);
+}
+
 .product {
   display: flex;
   flex-wrap: wrap;

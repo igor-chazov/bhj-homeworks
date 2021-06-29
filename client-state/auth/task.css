@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 .signin {
@@ -34,4 +34,42 @@ body {
 
 .welcome_active {
   display: block;
+}
+
+.modal__content {
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.modal__header {
+  padding: 30px;
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.modal__title {
+  font-size: 20px;
+}
+
+.modal__footer {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__close {
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  color: antiquewhite;
+  background-color: rgb(9, 4, 250);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.modal__close:hover {
+  background-color: rgb(40, 96, 250);
 }
